@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday, Abhilasha!</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #ffe6f0, #ffcce0);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+      padding: 50px;
+      color: #2c002e;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #2c002e;
+      text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.5em;
+      color: #3a003d;
+      text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
+      margin-bottom: 30px;
+    }
+
+    .heart {
+      font-size: 3em;
+      color: #c2185b;
+      animation: pulse 1s infinite;
+      text-shadow: 1px 1px 4px #fff;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    .btn {
+      padding: 12px 25px;
+      font-size: 1.1em;
+      background-color: #2c002e;
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn:hover {
+      background-color: #4b004b;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2em;
+      }
+      p {
+        font-size: 1.2em;
+      }
+      .btn {
+        font-size: 1em;
+        padding: 10px 20px;
+      }
+    }
+
+    /* Confetti */
+    .confetti {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: red;
+      opacity: 0.7;
+      animation: fall linear infinite;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(-10px) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Happy Birthday, Abhilasha! 🎉</h1>
+  <p>You’re not just another year older – you’re another year hotter. And yes, the world still isn’t ready for you.</p>
+  <div class="heart">❤️</div>
+
+  <button class="btn" onclick="window.location.href='surprise.html'">Click for a Surprise</button>
+
+  <!-- Confetti Script -->
+  <script>
+    const colors = ['#ff4d4d', '#ffcc00', '#66ff66', '#66ccff', '#ff99ff'];
+    for (let i = 0; i < 100; i++) {
+      const confetti = document.createElement("div");
+      confetti.classList.add("confetti");
+      confetti.style.left = Math.random() * 100 + "vw";
+      confetti.style.animationDuration = (Math.random() * 3 + 2) + "s";
+      confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+      confetti.style.top = Math.random() * -20 + "vh";
+      confetti.style.borderRadius = "50%";
+      document.body.appendChild(confetti);
+    }
+  </script>
+
+</body>
+</html>

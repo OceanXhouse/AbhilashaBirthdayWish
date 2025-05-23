@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>A Letter For You 💌</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #fff0f5, #ffe4e1);
+      font-family: 'Georgia', serif;
+      padding: 50px;
+      text-align: center;
+      color: #3b003b;
+      overflow-x: hidden;
+    }
+
+    .letter {
+      max-width: 700px;
+      margin: auto;
+      padding: 30px;
+      background-color: rgba(255, 255, 255, 0.85);
+      border: 2px solid #ffb6c1;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255, 182, 193, 0.5);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h2 {
+      font-size: 2em;
+      color: #c2185b;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.8;
+      margin-top: 20px;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .back-btn {
+      margin-top: 30px;
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #c2185b;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .back-btn:hover {
+      background-color: #9c1349;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="letter">
+    <h2>Dear Abhilasha,</h2>
+    <p>
+      On this beautiful day, I just wanted to remind you how special you are. <br>
+      Your smile lights up every room, your energy lifts every soul, and your heart is a treasure. <br><br>
+      I hope this birthday is as incredible as you are. May all your dreams come true, and may your year ahead be filled with endless love, laughter, and adventures. <br><br>
+      Here’s to more memories, late-night talks, unstoppable laughs, and new journeys together. 💖<br><br>
+      Happy Birthday, my star. 🌟
+    </p>
+    <button class="back-btn" onclick="window.location.href='index.html'">← Back to Start</button>
+  </div>
+
+  <!-- Background Music -->
+  <audio autoplay loop>
+    <source src="https://www.computerhope.com/jargon/m/example.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+</body>
+</html>
